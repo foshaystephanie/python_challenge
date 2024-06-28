@@ -20,7 +20,7 @@ with open(election_data, 'r') as csvfile:
         else:
             candidates[candidate] = 1
 
-election_results = 'analysis/election_results.txt'
+election_results = 'Analysis/election_results.txt'
 
 with open (election_results, 'w') as output:
     print("Election Results")
