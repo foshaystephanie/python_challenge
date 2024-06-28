@@ -43,6 +43,7 @@ with open (election_results, 'w') as output:
 
     for candidate, votes in candidates.items():
         percentage = (votes / total_votes) * 100
+
         print(f"{candidate}: {percentage:.3f}% ({votes})")
         output.write(f"{candidate}: {percentage:.3f}% ({votes})\n")
 
@@ -55,8 +56,11 @@ with open (election_results, 'w') as output:
     print("")
     print("-------------------------")
     print("")
+
+    output.write("\n")
     output.write("-------------------------\n")
-    print("")
+    output.write("\n")
     output.write(f"Winner: {winner}\n")
-    print("")
+    output.write("\n")
     output.write("-------------------------\n")
+    output.write("\n")
